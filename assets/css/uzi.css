@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Jost";
+    src: url('../fonts/Jost-Regular.ttf') format('truetype');
+  }
+
 *{
     transition:ease all 0.5s !important;
 }
@@ -9,6 +14,7 @@ body{
     height:auto !important;
     background-color:#D9D3C8;
     color:#110B12;
+    font-family:"Jost", Arial, Helvetica, sans-serif !important;
 }
 
 .uk-input, .uk-select{
@@ -67,11 +73,11 @@ body{
 }
 
 .raw-grid{
-    border-bottom:1px solid #110B12;
+    
 }
 
 .about-grid{
-    border-top:1px solid;
+    border-top:1px rgba(17,11,18,0.3) solid !important;
     padding-top:10px;
 }
 
@@ -123,5 +129,6 @@ body{
 }
 
 #configs{
-    border-bottom:1px solid #110B12 !important;
+    border-bottom:1px solid rgba(17,11,18,0.3) !important;
+    border-top:1px solid rgba(17,11,18,0.3) !important;
 }

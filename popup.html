@@ -14,52 +14,54 @@
       <div class="uk-container-expand">
         <a name="top"></a>
 
-        <!--raw-->
+        <div class="uk-container">
+          <!--raw-->
 
-        <div class="raw-grid" uk-grid>
-          <div class="uk-width-4-5">
-            <small
-              ><div id="spfull" uk-tooltip="full generated string">
-                uzi
-              </div></small
-            >
-
-            <input
-              type="text"
-              class="uk-input txt"
-              name="txtraw"
-              id="txtraw"
-              value=""
-              minlength="1"
-              maxlength="32"
-              uk-tooltip="raw string, must be less than 33 characters long"
-            />
-          </div>
-
-          <div class="uk-width-1-5">
-            <div class="uk-container">
-              <button
-                class="uk-button uk-button-secondary copy-btn"
-                data-target="txtraw"
-                data-message="raw string"
-                uk-tooltip="copy raw string to clipboard"
+          <div class="raw-grid" uk-grid>
+            <div class="uk-width-4-5">
+              <small
+                ><div id="spfull" uk-tooltip="full generated string">
+                  uzi
+                </div></small
               >
-                <i class="las la-copy"></i>
-              </button>
-              <p>
+
+              <input
+                type="text"
+                class="uk-input txt"
+                name="txtraw"
+                id="txtraw"
+                value=""
+                minlength="1"
+                maxlength="32"
+                uk-tooltip="raw string, must be less than 33 characters long"
+              />
+            </div>
+
+            <div class="uk-width-1-5">
+              <div class="uk-container">
                 <button
-                  class="uk-button uk-button-secondary"
-                  uk-tooltip="click to reverse this string"
-                  id="btnreverse"
+                  class="uk-button uk-button-secondary copy-btn uk-width-1-1"
+                  data-target="txtraw"
+                  data-message="raw string"
+                  uk-tooltip="copy raw string to clipboard"
                 >
-                  <i class="las la-exchange-alt"></i>
+                  <i class="las la-copy"></i>
                 </button>
-              </p>
+                <p>
+                  <button
+                    class="uk-button uk-button-secondary uk-width-1-1"
+                    uk-tooltip="click to reverse this string"
+                    id="btnreverse"
+                  >
+                    <i class="las la-exchange-alt"></i>
+                  </button>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!--raw-->
+          <!--raw-->
+        </div>
 
         <div id="configs">
           <div class="uk-child-width-expand@s uk-text-center" uk-grid>
@@ -71,7 +73,7 @@
                 max="32"
                 min="1"
                 step="1"
-                class="uk-input"
+                class="uk-input uk-width-1-1"
                 value="6"
                 uk-tooltip="length of the string"
                 required
@@ -97,6 +99,16 @@
                 <option value="octal">octal</option>
               </select>
             </div>
+
+            <div class="uk-width-2-5">
+              <button
+                class="uk-button uk-button-secondary uk-width-1-1"
+                uk-tooltip="click to generate"
+                id="btngenerate"
+              >
+                <i class="las la-infinity"></i> generate
+              </button>
+            </div>
           </div>
         </div>
 
@@ -105,7 +117,9 @@
             <a
               class="uk-accordion-title uk-text-small uk-text-uppercase"
               href="#"
-              ><div class="uk-container">Encrypted Strings</div></a
+              ><div class="uk-container">
+                <i class="las la-key"></i> Encrypted Strings
+              </div></a
             >
             <div class="uk-accordion-content">
               <!--md5-->
@@ -113,7 +127,7 @@
               <div class="uk-grid">
                 <div class="uk-width-1-5">
                   <label class="uk-form-label uk-align-right" for="txtmd5"
-                    >MD5:</label
+                    ><small>MD5:</small></label
                   >
                 </div>
 
@@ -147,7 +161,7 @@
               <div class="uk-grid">
                 <div class="uk-width-1-5">
                   <label class="uk-form-label uk-align-right" for="txtsha1"
-                    >SHA1:</label
+                    ><small>SHA1:</small></label
                   >
                 </div>
 
@@ -181,7 +195,7 @@
               <div class="uk-grid">
                 <div class="uk-width-1-5">
                   <label class="uk-form-label uk-align-right" for="txtbase64"
-                    >Base64:</label
+                    ><small>Base64:</small></label
                   >
                 </div>
 

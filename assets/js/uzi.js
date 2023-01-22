@@ -12,6 +12,8 @@ $(document).ready(function(){
 
     $('#btnreverse').on('click',reverseString);
 
+    $('#btngenerate').on('click',generateGivenString());
+
     $('#txtraw').on('keyup',function(){
 
         handleLengthValue();
