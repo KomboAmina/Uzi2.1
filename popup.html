@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/uikit.min.css" />
     <link rel="stylesheet" href="assets/icons/css/line-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/uzi.css" />
+    <link rel="stylesheet" href="assets/css/uzi.min.css" />
     <script src="assets/js/uikit.min.js"></script>
   </head>
   <body>
@@ -14,7 +14,7 @@
       <div class="uk-container-expand">
         <a name="top"></a>
 
-        <div class="uk-container">
+        <div class="">
           <!--raw-->
 
           <div class="raw-grid" uk-grid>
@@ -38,9 +38,9 @@
             </div>
 
             <div class="uk-width-1-5">
-              <div class="uk-container">
+              <div class="">
                 <button
-                  class="uk-button uk-button-secondary copy-btn uk-width-1-1"
+                  class="uk-button uk-button-secondary copy-btn uk-width-1-1 side-btn"
                   data-target="txtraw"
                   data-message="raw string"
                   uk-tooltip="copy raw string to clipboard"
@@ -49,7 +49,7 @@
                 </button>
                 <p>
                   <button
-                    class="uk-button uk-button-secondary uk-width-1-1"
+                    class="uk-button uk-button-secondary uk-width-1-1 side-btn"
                     uk-tooltip="click to reverse this string"
                     id="btnreverse"
                   >
@@ -102,7 +102,7 @@
 
             <div class="uk-width-2-5">
               <button
-                class="uk-button uk-button-secondary uk-width-1-1"
+                class="uk-button uk-button-secondary uk-width-1-1 side-btn"
                 uk-tooltip="click to generate"
                 id="btngenerate"
               >
@@ -112,10 +112,10 @@
           </div>
         </div>
 
-        <ul id="extras" class="uk-margin-right" uk-accordion>
+        <ul id="extras" class="uk-margin-none" uk-accordion>
           <li>
             <a
-              class="uk-accordion-title uk-text-small uk-text-uppercase"
+              class="uk-accordion-title uk-text-small uk-text-uppercase uk-button-secondary"
               href="#"
               ><div class="uk-container">
                 <i class="las la-key"></i> Encrypted Strings
@@ -144,7 +144,7 @@
 
                 <div class="uk-width-1-5">
                   <button
-                    class="uk-button uk-button-secondary copy-btn uk-width-1-1"
+                    class="uk-button uk-button-secondary copy-btn uk-width-1-1 side-btn"
                     data-target="txtmd5"
                     data-message="MD5 string"
                     uk-tooltip="copy MD5 hashed string"
@@ -178,7 +178,7 @@
 
                 <div class="uk-width-1-5">
                   <button
-                    class="uk-button uk-button-secondary copy-btn uk-width-1-1"
+                    class="uk-button uk-button-secondary copy-btn uk-width-1-1 side-btn"
                     data-target="txtsha1"
                     data-message="SHA1 string"
                     uk-tooltip="copy SHA1 hashed string."
@@ -212,7 +212,7 @@
 
                 <div class="uk-width-1-5">
                   <button
-                    class="uk-button uk-button-secondary copy-btn uk-width-1-1"
+                    class="uk-button uk-button-secondary copy-btn uk-width-1-1 side-btn"
                     data-target="txtbase64"
                     data-message="Base64 string"
                     uk-tooltip="copy Base64 hashed string"
@@ -242,7 +242,7 @@
           <div class="uk-width-2-5">
             <a
               href="about.html"
-              class="uk-button uk-button-secondary uk-width-1-1 uk-padding-small"
+              class="uk-button uk-button-secondary uk-width-1-1 uk-padding-small corner-bottom-button-right"
               uk-tooltip="click to learn about Uzi"
               uk-toggle="target: #about-modal"
             >
@@ -256,6 +256,6 @@
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/jquery-md5/jquery.md5.js"></script>
     <script src="assets/js/sha1.js"></script>
-    <script src="assets/js/uzi.js"></script>
+    <script src="assets/js/uzi.min.js"></script>
   </body>
 </html>
