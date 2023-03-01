@@ -22,7 +22,7 @@ _Uzi_ is a free chrome extension to generate random strings, such as passwords. 
 The extension loads with "uzi" as the default string and a length of 3.
 String generation mostly happens automatically when the extension is loaded or one of the generating values is called.
 
-![Screenshot of the expanded view](https://raw.githubusercontent.com/KomboAmina/Uzi2.1/main/assets/img/Popup-2.png)
+![Screenshot of the expanded view](https://raw.githubusercontent.com/KomboAmina/Uzi2.1/main/assets/img/Popup-5.png)
 
 ## Features
 1. Editable output field.
@@ -31,6 +31,7 @@ String generation mostly happens automatically when the extension is loaded or o
 4. String reversal.
 5. String length calculator.
 6. Copy to clipboard.
+7. Generate QR Code.
 
 ### Characters
 String length can only be whole numbers from 1 to 32.
@@ -51,6 +52,11 @@ Encrypted strings are read-only and can be:
 * MD5
 * SHA1
 * Base64
+
+### QR Codes
+A QR code of the random generated string. Maximum length is 32 characters.
+
+![Screenshot of the expanded qr code view](https://raw.githubusercontent.com/KomboAmina/Uzi2.1/main/assets/img/Popup-6.png)
 
 ### Special Mentions
 * This extension was built on the UIkit framework (https://getuikit.com).
