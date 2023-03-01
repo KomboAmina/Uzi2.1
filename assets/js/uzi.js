@@ -117,6 +117,8 @@ function generateDefaultString(){
 
     convertToSHA1('uzi');
 
+    generateQRCode('uzi');
+
     showFullString();
 
 };
@@ -177,7 +179,7 @@ function getCodexString(codex){
 
     if(codex=="symbols"){
 
-        codeBase+="~!@#$%^&*()_+-={}[]:;,.?";
+        codeBase="~!@#$%^&*()_+-={}[]:;,.?";
 
     }//
 
@@ -250,6 +252,8 @@ function generateRandomString(length,codex){
 
     convertToBase64(generatedString);
 
+    generateQRCode(generatedString);
+
     showFullString();
 
 };
@@ -265,6 +269,8 @@ function generateGivenString(rawString=""){
     convertToSHA1(rawString);
 
     convertToBase64(rawString);
+
+    generateQRCode(rawString);
 
     showFullString();
 
@@ -309,3 +315,17 @@ function convertToBase64(rawString){
     $('#txtbase64').val(base64);
 
 }//
+
+function generateQRCode(givenString){
+
+    var qrdiv=document.getElementById('qrcode');
+
+    qrdiv.innerHTML='';
+
+    var qrCode= new QRCode(document.getElementById("qrcode"), {
+        text: givenString,
+        colorDark: "#110B12",
+        colorLight: "#D9D3C8",
+      });
+
+}

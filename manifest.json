@@ -11,5 +11,5 @@
    "manifest_version": 3,
    "name": "Uzi",
    "permissions": [ "activeTab" ],
-   "version": "2.0.0"
+   "version": "2.1.0"
 }
